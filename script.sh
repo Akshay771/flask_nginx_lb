@@ -10,19 +10,19 @@ sudo apt install -y python3 python3-pip
 pip3 install flask flask-restful
 
 # Clone your Flask app repository (replace <repository_url> with your actual repository URL)
-git clone <repository_url>
+git clone https://github.com/Akshay771/flask_nginx_lb.git
 
 # Change directory to your Flask app directory
-cd your_flask_app_directory
+cd flask_nginx_lb
 
 # Optionally, if you're using a virtual environment, create and activate it
 # python3 -m venv venv
 # source venv/bin/activate
 
 # Set environment variables
-export VM_ID=VM_0001
+#export VM_ID=VM_0003
 # export SECRET_KEY=your_secret_key
 # export DATABASE_URL=your_database_url
 
 # Run the Flask app
-python3 app.py
+nohup python3 app.py &
